@@ -43,7 +43,7 @@
 
 ## 🖥️ Live Demo
 
-Try it here: **[Add your Hugging Face Space link]**
+Try it here: https://huggingface.co/spaces/somiya-khan01/biomimetic-tendon-bone
 
 ---
 
@@ -339,4 +339,3 @@ For questions, suggestions, or collaborations, feel free to reach out!
 ---
 
 
----
