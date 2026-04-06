@@ -1,4 +1,114 @@
+# 🔬 PoreScope — Automated SEM Pore Detection & Analysis
 
+**AI-Powered Biomaterial Characterization Tool** · By Somiya Khan
+
+[![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.8+-green.svg)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-red.svg)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-orange.svg)
+
+> ⚠️ **Note:** This tool is designed for research and educational purposes only. Not intended for clinical diagnosis.
+
+---
+
+## 📌 Table of Contents
+
+- [Overview](#overview)
+- [Live Demo](#live-demo)
+- [Model Performance](#model-performance)
+- [Dataset](#dataset)
+- [How It Works](#how-it-works)
+- [Technology Stack](#technology-stack)
+- [Installation](#installation)
+- [Author](#author)
+- [License](#license)
+
+---
+
+## 🔬 Overview
+
+**PoreScope** automatically detects and analyzes pores in SEM images of biomaterials using computer vision and machine learning.
+
+### Key Features
+
+- Automated pore detection from SEM images
+- Pore diameter estimation (91% accuracy)
+- Porosity calculation
+- Side-by-side original vs. annotated visualization
+- Drag-and-drop upload interface
+- Exportable results table
+
+---
+
+## 🖥️ Live Demo
+
+Try it here: **[Add your Hugging Face Space link]**
+
+---
+
+## 📊 Model Performance
+
+| Metric | Value |
+|--------|-------|
+| Pore Detection Accuracy | 98.6% |
+| Pore Diameter Accuracy | 91.0% |
+| Porosity Accuracy | 78.9% |
+| Algorithm | Random Forest |
+| Training Images | 1,000 SEM images |
+
+### Confusion Matrix
+
+| | Predicted Pore | Predicted Non-Pore |
+|---|---|---|
+| **Actual Pore** | 98.6% | 1.4% |
+| **Actual Non-Pore** | 2.1% | 97.9% |
+
+---
+
+## 📊 Dataset
+
+| Property | Details |
+|----------|---------|
+| Source | Kaggle |
+| Total Images | 18,577 |
+| Categories | 10 material types |
+| Training Set | 1,000 images |
+
+**Material types:** Porous_Sponge, Fibres, Particles, Biological, Nanowires, Patterned_surface, Tips, Films_Coated_Surface, MEMS_devices, Powder
+
+---
+
+## ⚙️ How It Works
+
+1. **Upload** — Drag-and-drop SEM image
+2. **Preprocess** — Convert to grayscale, denoise
+3. **Detect** — Identify pore boundaries via CV
+4. **Analyze** — Calculate diameter, area, porosity
+5. **Predict** — RF model refines estimates
+6. **Display** — Annotated image + results table
+
+---
+
+## 🛠️ Technology Stack
+
+| Category | Tools |
+|----------|-------|
+| UI | Gradio |
+| Image Processing | OpenCV, scikit-image |
+| ML | scikit-learn (Random Forest) |
+| Data | NumPy, Pandas |
+| Deployment | Hugging Face Spaces |
+
+---
+
+## 💻 Installation
+
+```bash
+git clone https://github.com/yourusername/porescope.git
+cd porescope
+pip install -r requirements.txt
+python app.py
 
 ```markdown
 # 🔬 PoreScope — Automated SEM Pore Detection & Analysis
@@ -15,21 +125,6 @@
 
 ---
 
-## 📌 Table of Contents
-
-- [Overview](#overview)
-- [Live Demo](#live-demo)
-- [Screenshots](#screenshots)
-- [Model Performance](#model-performance)
-- [Dataset](#dataset)
-- [How It Works](#how-it-works)
-- [Technology Stack](#technology-stack)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Author](#author)
-- [License](#license)
-
----
 
 ## 🔬 Overview
 
