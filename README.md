@@ -1,278 +1,159 @@
-# 🔬 PoreScope — Automated SEM Pore Detection & Analysis
+# Tendon-Bone Interface Simulator — Biomimetic Gradient Design & Analysis
 
-**AI-Powered Biomaterial Characterization Tool** · By Somiya Khan
+## AI-Powered Computational Platform for Mechano-Chemical Tissue Interface Simulation · By PhD Research Project
 
-[![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.12+-green.svg)](https://www.python.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-2.0.2-blue.svg)](https://numpy.org/)
+[![SciPy](https://img.shields.io/badge/SciPy-1.16.3-orange.svg)](https://scipy.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.10.0-red.svg)](https://matplotlib.org/)
 
-> ⚠️ **Note:** This tool is designed for research and educational purposes only. Not intended for clinical diagnosis.
+> ⚠️ **Note**: This simulator is designed for research and educational purposes only. It is not intended for clinical diagnosis, medical device certification, or regulatory decision-making without experimental validation.
 
 ---
 
 ## 📌 Table of Contents
 
-- [Overview](#overview)
-- [Live Demo](#live-demo)
-- [Model Performance](#model-performance)
-- [Dataset](#dataset)
-- [How It Works](#how-it-works)
-- [Technology Stack](#technology-stack)
-- [Installation](#installation)
-- [Author](#author)
-- [License](#license)
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Screenshots & Visual Outputs](#-screenshots--visual-outputs)
+- [Model Performance](#-model-performance)
+- [Gradient Profiles](#-gradient-profiles)
+- [How It Works](#-how-it-works)
+- [Technology Stack](#-technology-stack)
+- [Installation](#-installation)
+- [Project Structure](#-project-structure)
+- [Next Steps (Phase 2)](#-next-steps-phase-2)
+- [Author](#-author)
+- [License](#-license)
 
 ---
 
-## 🔬 Overview
+## 🧬 Tendon-Bone Interface Simulator — Biomimetic Gradient Design & Analysis
 
-**PoreScope** automatically detects and analyzes pores in SEM images of biomaterials using computer vision and machine learning.
+### AI-Powered Computational Platform for Mechano-Chemical Tissue Interface Simulation · By PhD Research Project
 
-### Key Features
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.12+-green.svg)](https://www.python.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-2.0.2-blue.svg)](https://numpy.org/)
+[![SciPy](https://img.shields.io/badge/SciPy-1.16.3-orange.svg)](https://scipy.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.10.0-red.svg)](https://matplotlib.org/)
 
-- Automated pore detection from SEM images
-- Pore diameter estimation (91% accuracy)
-- Porosity calculation
-- Side-by-side original vs. annotated visualization
-- Drag-and-drop upload interface
-- Exportable results table
-
----
-
-## 🖥️ Live Demo
-
-Try it here: https://huggingface.co/spaces/somiya-khan01/biomimetic-tendon-bone
+> ⚠️ **Note**: This simulator is designed for research and educational purposes only. It is not intended for clinical diagnosis, medical device certification, or regulatory decision-making without experimental validation.
 
 ---
 
-## 📊 Model Performance
+## 📸 Screenshots & Visual Outputs
 
-| Metric | Value |
-|--------|-------|
-| Pore Detection Accuracy | 98.6% |
-| Pore Diameter Accuracy | 91.0% |
-| Porosity Accuracy | 78.9% |
-| Algorithm | Random Forest |
-| Training Images | 1,000 SEM images |
+### Stiffness Gradient Profiles
+*Comparison of linear, sigmoidal (biomimetic), and exponential gradient designs*
 
-### Confusion Matrix
-
-| | Predicted Pore | Predicted Non-Pore |
-|---|---|---|
-| **Actual Pore** | 98.6% | 1.4% |
-| **Actual Non-Pore** | 2.1% | 97.9% |
+| Linear Gradient | Sigmoidal Gradient | Exponential Gradient |
+|----------------|-------------------|----------------------|
+| *Uniform transition* | *Biomimetic S-curve* | *Rapid early stiffening* |
 
 ---
 
-## 📊 Dataset
+### Mechanical Analysis Dashboard
 
-| Property | Details |
-|----------|---------|
-| Source | Kaggle |
-| Total Images | 18,577 |
-| Categories | 10 material types |
-| Training Set | 1,000 images |
+| Stress Distribution | Modulus-Stress Correlation |
+<img width="1910" height="865" alt="image" src="https://github.com/user-attachments/assets/8c0c220e-a2d8-4de6-bf18-1ed4e7f38b23" />
 
-**Material types:** Porous_Sponge, Fibres, Particles, Biological, Nanowires, Patterned_surface, Tips, Films_Coated_Surface, MEMS_devices, Powder
 
 ---
 
-## ⚙️ How It Works
+### Biological Simulation
 
-1. **Upload** — Drag-and-drop SEM image
-2. **Preprocess** — Convert to grayscale, denoise
-3. **Detect** — Identify pore boundaries via CV
-4. **Analyze** — Calculate diameter, area, porosity
-5. **Predict** — RF model refines estimates
-6. **Display** — Annotated image + results table
+| Day 0: Initial Seeding | Day 28: Differentiated Co-culture |
+|------------------------|-------------------------------------|
+| *Tenocyte-rich near soft region* | *Osteoblast-rich near hard region* |
 
----
-
-## 🛠️ Technology Stack
-
-| Category | Tools |
-|----------|-------|
-| UI | Gradio |
-| Image Processing | OpenCV, scikit-image |
-| ML | scikit-learn (Random Forest) |
-| Data | NumPy, Pandas |
-| Deployment | Hugging Face Spaces |
+<img width="1920" height="834" alt="image" src="https://github.com/user-attachments/assets/e7367b70-9bf3-4ebb-aef5-e7c79c761d9a" />
 
 ---
 
-## 💻 Installation
+### Fatigue Life Prediction
 
-```bash
-git clone https://github.com/yourusername/porescope.git
-cd porescope
-pip install -r requirements.txt
-python app.py
+| Fatigue Life Distribution | Stiffness Degradation | Design Validation |
 
-```markdown
-# 🔬 PoreScope — Automated SEM Pore Detection & Analysis
-
-**AI-Powered Biomaterial Characterization Tool** · By Somiya Khan
-
-[![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Python](https://img.shields.io/badge/Python-3.8+-green.svg)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-red.svg)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-orange.svg)
-
-> ⚠️ **Note:** This tool is designed for research and educational purposes only. It is not intended for clinical diagnosis or regulatory decision-making.
+<img width="959" height="442" alt="image" src="https://github.com/user-attachments/assets/488948c9-db77-4d47-85ce-96f1de0a61ab" />
 
 ---
 
+### Final Summary Dashboard
 
-## 🔬 Overview
-
-**PoreScope** is an automated image analysis tool that detects and characterizes pores in Scanning Electron Microscope (SEM) images of biomaterials. It uses computer vision and machine learning to identify pore boundaries, measure pore diameters, and calculate porosity — enabling rapid, objective, and reproducible biomaterial characterization.
-
-### Key Features
-
-| Feature | Description |
-|---------|-------------|
-| 🔍 **Automated Pore Detection** | Identifies pore boundaries from SEM images |
-| 📏 **Pore Diameter Estimation** | Random Forest Regression with 91% accuracy |
-| 🧮 **Porosity Calculation** | Quantifies material porosity automatically |
-| 📸 **Side-by-Side Visualization** | Original vs. annotated image comparison |
-| 📂 **Drag-and-Drop Upload** | Easy image upload interface |
-| 📊 **Exportable Results** | Table of pore metrics for further analysis |
-
----
-
-## 🖥️ Live Demo
-
-Try PoreScope live on Hugging Face Spaces:  
-👉 **[Click here for live demo]** *(Add your Hugging Face Space link)*
-
----
-
-## 📸 Screenshots
-
-### Home Page
-*Upload interface with drag-and-drop functionality*
-<img width="1907" height="883" alt="image" src="https://github.com/user-attachments/assets/f7a5b844-c3f7-495e-99a6-549e6df695fc" />
-
-
-### Analysis Results
-*Side-by-side comparison: Original grayscale vs. Annotated image with detected pore boundaries*
-<img width="1920" height="892" alt="image" src="https://github.com/user-attachments/assets/b3b106a6-da6b-4d9c-8cd6-dae9515f1eb5" />
-
-### Feature Table
-*Tabular results with pore metrics and calculated values*
-<img width="1911" height="895" alt="image" src="https://github.com/user-attachments/assets/6f5be386-250e-43f2-b6a9-1b7155e7576f" />
+| Modulus Gradient | Stress Distribution | Day 28 Cell Distribution | Performance Radar |
+|-----------------|---------------------|--------------------------|--------------------|
+| *10 → 1000 MPa* | *Peak stress location* | *Tenocyte/Osteoblast balance* | *Normalized metrics* |
 
 ---
 
 ## 📊 Model Performance
 
-| Metric | Value |
-|--------|-------|
-| **Pore Detection Accuracy** | 98.6% |
-| **Pore Diameter Prediction Accuracy** | 91.0% |
-| **Porosity Prediction Accuracy** | 78.9% |
-| **Algorithm** | Random Forest Regression |
-| **Input Features** | 5 (mean, std, min, max intensity + pore count) |
-| **Training Images** | 1,000 SEM images |
+| Metric                                      | Value        |
+|---------------------------------------------|--------------|
+| **Overall Modulus (Graded Interface)**      | 29.2 MPa     |
+| **Interface Toughness**                     | 9,835 J/m²   |
+| **Stress Concentration Reduction**          | 0.0%*        |
+| **Fatigue Life (3% strain)**                | 22,768 cycles|
+| **Safety Factor (vs 100k target)**          | 0.23x        |
+| **Differentiation Coverage (Day 28)**       | 0 → 1 gradient |
 
-### Confusion Matrix (Pore Detection)
-
-| | Detected Pore | Detected Non-Pore |
-|---|---|---|
-| **Actual Pore** | 98.6% | 1.4% |
-| **Actual Non-Pore** | 2.1% | 97.9% |
+> *Note: Current abrupt vs graded comparison shows 0% reduction — indicating opportunity for gradient optimization.
 
 ---
 
-## 📊 Dataset
+## 📐 Gradient Profiles
 
-| Property | Details |
-|----------|---------|
-| **Name** | SEM Images of Nanoscale Features |
-| **Source** | Kaggle |
-| **Total Images** | 18,577 SEM images |
-| **Categories** | 10 material types |
-| **Training Set** | 1,000 images |
-| **Image Formats** | JPG, PNG, TIF |
+| Profile Type    | Mathematical Form                          | Application              |
+|----------------|--------------------------------------------|--------------------------|
+| **Linear**     | `E = E_soft + (E_hard - E_soft) × (x/L)`   | Baseline comparison      |
+| **Sigmoidal**  | Smoothstep interpolation (3t² - 2t³)       | **Biomimetic (default)** |
+| **Exponential**| `E_soft × exp(β × t) / exp(β) × E_hard`    | Rapid transition         |
 
-### Material Categories
-
-| Category |
-|----------|
-| Porous_Sponge |
-| Fibres |
-| Particles |
-| Biological |
-| Nanowires |
-| Patterned_surface |
-| Tips |
-| Films_Coated_Surface |
-| MEMS_devices_and_electrodes |
-| Powder |
+**Parameters:**
+- Interface length: 10 mm
+- Soft modulus: 10 MPa (tendon-like)
+- Hard modulus: 1000 MPa (bone-like)
 
 ---
 
 ## ⚙️ How It Works
 
-```
-Upload SEM Image → Preprocess (Grayscale + Denoise) → Detect Pore Boundaries
-                                                              ↓
-Display Results ← Predict Diameter (Random Forest) ← Calculate Pore Metrics
-```
+The simulation is structured into five integrated computational modules:
 
-**Step-by-step:**
+### 1️⃣ Stiffness Gradient Design
+Defines continuous modulus variation from soft tendon to hard bone using analytical gradient functions. Three profiles are available: linear, sigmoidal (biomimetic), and exponential.
 
-1. **Upload** — User uploads an SEM image via drag-and-drop
-2. **Preprocess** — Image is converted to grayscale and denoised
-3. **Detect** — Computer vision algorithms identify pore boundaries
-4. **Analyze** — Pore diameter, area, and porosity are calculated
-5. **Predict** — Random Forest model refines diameter estimates
-6. **Display** — Annotated image and results table are shown side-by-side
+### 2️⃣ Mechanical Simulation
+- **Stress Distribution**: Calculates local stress under uniform tensile strain.
+- **Stress Concentration Factor (SCF)**: Compares graded vs abrupt interfaces.
+- **Shear-Lag Analysis**: Models stress transfer efficiency and interface toughness.
 
----
+### 3️⃣ Biological Simulation
+- **Cell Seeding**: Tenocytes (soft region) and osteoblasts (hard region).
+- **Differentiation**: Time-dependent conversion (21-day half-life).
+- **Outputs**: Cell density profiles, proliferation kinetics, differentiation heatmaps.
 
-## 🛠️ Technology Stack
+### 4️⃣ Fatigue Life Prediction
+- **S-N Curve**: Basquin equation (`σ_f = 100 MPa`, `b = -0.12`).
+- **Stiffness Degradation**: Linear damage accumulation.
+- **Outputs**: Fatigue life distribution, critical zone identification, safety factor.
 
-| Category | Technologies |
-|----------|--------------|
-| **Frontend & UI** | Gradio, HTML/CSS |
-| **Image Processing** | OpenCV, scikit-image |
-| **Machine Learning** | scikit-learn (Random Forest) |
-| **Data Handling** | NumPy, Pandas |
-| **Visualization** | Matplotlib |
-| **Deployment** | Hugging Face Spaces |
-
-
-## 👩‍🔬 Author
-
-**Somiya Khan**  
-Biomedical Engineer | AI Researcher
-
+### 5️⃣ Summary & Visualization
+Generates a comprehensive dashboard with performance radar chart and key metrics.
 
 ---
 
-## 📄 License
+## 🖥️ Technology Stack
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **Dataset:** SEM Images of Nanoscale Features (Kaggle)
-- **Deployment:** Hugging Face Spaces 🤗
-- **Libraries:** OpenCV, scikit-learn, Gradio
+| Component          | Technology                          |
+|--------------------|-------------------------------------|
+| **Language**       | Python 3.12                         |
+| **Numerical Computing** | NumPy 2.0.2                      |
+| **Scientific Computing** | SciPy 1.16.3 (integration, optimization) |
+| **Visualization**  | Matplotlib 3.10.0                   |
+| **Environment**    | Google Colab / Local Python         |
 
 ---
-
-## 📬 Contact
-
-For questions, suggestions, or collaborations, feel free to reach out!
-
----
-
-*Made with ❤️ for biomaterials research and reproducible science*
-```
-
----
-
 
