@@ -1,6 +1,6 @@
 # Tendon-Bone Interface Simulator — Biomimetic Gradient Design & Analysis
 
-## AI-Powered Computational Platform for Mechano-Chemical Tissue Interface Simulation · By PhD Research Project
+## AI-Powered Computational Platform for Mechano-Chemical Tissue Interface Simulation · By Somiya Khan
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.12+-green.svg)](https://www.python.org/)
