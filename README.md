@@ -21,11 +21,6 @@
 - [Gradient Profiles](#-gradient-profiles)
 - [How It Works](#-how-it-works)
 - [Technology Stack](#-technology-stack)
-- [Installation](#-installation)
-- [Project Structure](#-project-structure)
-- [Next Steps (Phase 2)](#-next-steps-phase-2)
-- [Author](#-author)
-- [License](#-license)
 
 ---
 
