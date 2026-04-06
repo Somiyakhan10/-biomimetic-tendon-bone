@@ -245,39 +245,6 @@ Display Results ← Predict Diameter (Random Forest) ← Calculate Pore Metrics
 | **Visualization** | Matplotlib |
 | **Deployment** | Hugging Face Spaces |
 
----
-
-## 💻 Installation
-
-### Local Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/porescope.git
-cd porescope
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-python app.py
-```
-
-### Dependencies
-
-```txt
-gradio>=4.0.0
-opencv-python>=4.8.0
-numpy>=1.24.0
-pandas>=2.0.0
-scikit-learn>=1.3.0
-matplotlib>=3.7.0
-scikit-image>=0.21.0
-```
 
 ---
 
