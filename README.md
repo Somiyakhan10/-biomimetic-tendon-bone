@@ -3,10 +3,6 @@
 **AI-Powered Biomaterial Characterization Tool** · By Somiya Khan
 
 [![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Python](https://img.shields.io/badge/Python-3.8+-green.svg)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-red.svg)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-orange.svg)
 
 > ⚠️ **Note:** This tool is designed for research and educational purposes only. Not intended for clinical diagnosis.
 
@@ -245,32 +241,6 @@ Display Results ← Predict Diameter (Random Forest) ← Calculate Pore Metrics
 | **Visualization** | Matplotlib |
 | **Deployment** | Hugging Face Spaces |
 
-
----
-
-## 📁 Project Structure
-
-```
-porescope/
-│
-├── app.py                 # Main Gradio application
-├── requirements.txt       # Python dependencies
-├── README.md              # Project documentation
-│
-├── models/
-│   └── random_forest.pkl  # Trained Random Forest model
-│
-├── utils/
-│   ├── image_processing.py   # Preprocessing functions
-│   └── pore_analysis.py      # Pore detection & metrics
-│
-├── samples/               # Sample SEM images for testing
-│
-└── assets/
-    └── screenshots/       # UI screenshots for README
-```
-
----
 
 ## 👩‍🔬 Author
 
