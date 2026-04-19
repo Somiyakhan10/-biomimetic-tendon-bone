@@ -24,17 +24,7 @@
 
 ---
 
-## 🧬 Tendon-Bone Interface Simulator — Biomimetic Gradient Design & Analysis
 
-### AI-Powered Computational Platform for Mechano-Chemical Tissue Interface Simulation · By PhD Research Project
-
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.12+-green.svg)](https://www.python.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-2.0.2-blue.svg)](https://numpy.org/)
-[![SciPy](https://img.shields.io/badge/SciPy-1.16.3-orange.svg)](https://scipy.org/)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.10.0-red.svg)](https://matplotlib.org/)
-
-> ⚠️ **Note**: This simulator is designed for research and educational purposes only. It is not intended for clinical diagnosis, medical device certification, or regulatory decision-making without experimental validation.
 
 ---
 
